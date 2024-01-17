@@ -1,0 +1,40 @@
+{
+  "name": "bun-webinix",
+  "version": "0.0.9",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webinix-dev/bun-webinix.git"
+  },
+  "description": "Use any web browser as GUI, with Bun in the backend and HTML5 in the frontend.",
+  "keywords": [
+    "webinix",
+    "bun",
+    "bunjs"
+  ],
+  "homepage": "https://webinix.me/",
+  "bugs": "https://github.com/webinix-dev/bun-webinix/issues",
+  "license": "MIT",
+  "author": "",
+  "module": "src/webinix.ts",
+  "type": "module",
+  "types": "types/webinix.d.ts",
+  "files": [
+    "src/",
+    "types/"
+  ],
+  "scripts": {
+    "types": "tsc",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/bun": "latest",
+    "prettier": "^3.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
+  }
+}
