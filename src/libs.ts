@@ -14,6 +14,7 @@ export const { close, symbols: c_webinix } = dlopen(lib_path, {
     returns: "usize",
   },
 
+  // ok
   webinix_get_new_window_id: {
     args: [],
     returns: "usize",
@@ -24,6 +25,7 @@ export const { close, symbols: c_webinix } = dlopen(lib_path, {
     returns: "usize",
   },
 
+  // ok
   webinix_get_best_browser: {
     args: ["usize"],
     returns: "usize",
@@ -40,21 +42,26 @@ export const { close, symbols: c_webinix } = dlopen(lib_path, {
     returns: "bool",
   },
 
+  // ok
   webinix_show_browser: {
     args: ["usize", "cstring", "usize"],
     returns: "bool",
   },
 
+  // ok
   webinix_start_server: {
     args: ["usize", "cstring"],
     returns: "cstring",
   },
 
+  // TODO: Need to wait for issue reply verification
+  // https://github.com/webinix-dev/webinix/issues/496
   webinix_show_wv: {
     args: ["usize", "cstring"],
     returns: "bool",
   },
 
+  // ok
   webinix_set_kiosk: {
     args: ["usize", "bool"],
   },
@@ -68,6 +75,7 @@ export const { close, symbols: c_webinix } = dlopen(lib_path, {
     returns: "bool",
   },
 
+  // ok
   webinix_browser_exist: {
     args: ["usize"],
     returns: "bool",
@@ -149,14 +157,17 @@ export const { close, symbols: c_webinix } = dlopen(lib_path, {
     args: ["pointer", "cstring", "pointer", "usize"],
   },
 
+  // ok
   webinix_set_hide: {
     args: ["usize", "bool"],
   },
 
+  // ok
   webinix_set_size: {
     args: ["usize", "u32", "u32"],
   },
 
+  // ok
   webinix_set_position: {
     args: ["usize", "u32", "u32"],
   },
@@ -169,6 +180,7 @@ export const { close, symbols: c_webinix } = dlopen(lib_path, {
     args: ["usize", "cstring"],
   },
 
+  // ok
   webinix_get_url: {
     args: ["usize"],
     returns: "cstring",

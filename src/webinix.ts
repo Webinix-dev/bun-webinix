@@ -21,7 +21,7 @@ const ptrToCstring = (pointer: Pointer | number): CString => {
 };
 
 export class Webinix {
-  _window_id: bigint;
+  private _window_id: bigint;
 
   constructor(id?: number) {
     if (id == undefined) {
@@ -34,21 +34,84 @@ export class Webinix {
     return;
   }
 
-  show(content: string): boolean {
+  get windowId(): number {
+    return Number(this._window_id);
+  }
+
+  show(content: string, browser?: Browser): boolean {
+    if (browser) {
+      return c_webinix.webinix_show_browser(
+        this._window_id,
+        stringToPtr(content),
+        browser,
+      );
+    }
     return c_webinix.webinix_show(this._window_id, stringToPtr(content));
+  }
+
+  startServer(content: string): string {
+    const cstring = c_webinix.webinix_start_server(
+      this._window_id,
+      stringToPtr(content),
+    );
+    return cstring.toString();
+  }
+
+  // TODO: Need to wait for issue reply verification
+  // https://github.com/webinix-dev/webinix/issues/496
+  showWv(content: string): boolean {
+    return c_webinix.webinix_show_wv(this._window_id, stringToPtr(content));
+  }
+
+  setKiosk(status: boolean) {
+    c_webinix.webinix_set_kiosk(this._window_id, status);
+  }
+
+  setHighContrast(status: boolean) {
+    c_webinix.webinix_set_high_contrast(this._window_id, status);
+  }
+
+  setHide(status: boolean) {
+    c_webinix.webinix_set_hide(this._window_id, status);
+  }
+
+  setSize(width: number, height: number) {
+    c_webinix.webinix_set_size(this._window_id, width, height);
+  }
+
+  setPosition(x: number, y: number) {
+    c_webinix.webinix_set_position(this._window_id, x, y);
+  }
+
+  getUrl(): string {
+    const _url = c_webinix.webinix_get_url(this._window_id);
+    return _url.toString();
   }
 
   static wait() {
     c_webinix.webinix_wait();
   }
+
+  static getNewWindowId(): number {
+    return Number(c_webinix.webinix_get_new_window_id());
+  }
+
+  static browserExist(browser: Browser): boolean {
+    return c_webinix.webinix_browser_exist(browser);
+  }
+
+  static getBestBrowser(): Browser {
+    const _browser = c_webinix.webinix_get_best_browser();
+    return Number(_browser) as Browser;
+  }
 }
 
 // TODO: 待测试
-class Event {
+export class Event {
   data: DataView<ArrayBuffer>;
 
   constructor(pointer: Pointer) {
-    this.data = new DataView(toArrayBuffer(pointer, 0, 32));
+    this.data = new DataView(toArrayBuffer(pointer, 0, 64));
   }
 
   get window(): bigint {
