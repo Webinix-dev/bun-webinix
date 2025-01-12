@@ -1,13 +1,14 @@
 import { dlopen } from "bun:ffi";
 import { lib_path } from "./meta";
 
-export const { close, symbols:c_webinix } = dlopen(lib_path, {
+export const { close, symbols: c_webinix } = dlopen(lib_path, {
   // ok
   webinix_new_window: {
     args: [],
     returns: "usize",
   },
 
+  // ok
   webinix_new_window_id: {
     args: ["usize"],
     returns: "usize",

@@ -1,4 +1,4 @@
-import { Webinix } from "../../src/webinix"
+import { Webinix } from "../../src/webinix";
 
 const content =
   '<html><head><script src="webinix.js"></script></head> Hello World ! </html>';
