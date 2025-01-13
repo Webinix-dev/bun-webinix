@@ -99,6 +99,7 @@ export const { close, symbols: c_webinix } = dlopen(lib_path, {
     args: ["usize"],
   },
 
+  // ok
   webinix_exit: {
     args: [],
   },
