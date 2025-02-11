@@ -64,7 +64,7 @@ bun run minimal.ts
 
 ## Documentation
 
-- [Online Documentation](https://webinix.me/docs/2.5/#/)
+- [Online Documentation](https://webinix.me/docs/2.5/#/) (_Deno section is the same as Bun_)
 
 ## CppCon 2019 Presentation
 
