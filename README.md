@@ -2,9 +2,7 @@
 
 ![Logo](https://raw.githubusercontent.com/webinix-dev/webinix-logo/main/webinix_bun.png)
 
-# NOT USABLE YET - UNDERDEVELOPMENT
-
-# Bun-Webinix v2.5.0 (Beta)
+# Bun-Webinix v2.5.1 (Beta)
 
 [last-commit]: https://img.shields.io/github/last-commit/webinix-dev/webinix?style=for-the-badge&logo=github&logoColor=C0CAF5&labelColor=414868
 [release-version]: https://img.shields.io/github/v/tag/webinix-dev/webinix?style=for-the-badge&logo=webtrees&logoColor=C0CAF5&labelColor=414868&color=7664C6
@@ -40,16 +38,22 @@ is written in Bun using Webinix as the GUI library.
 
 ![ScreenShot](img/webinix_bun_example.png)
 
-## Installation
+## NPM Installation
 
-Specific version: `import { Webinix } from "webinix";`
+```sh
+npm install @webinix-dev/bun-webinix
+```
 
-Latest version: `import { Webinix } from "https://bun.sh/x/webinix/mod.ts";`
+## Import Package
+
+```js
+import { Webinix } from '@webinix-dev/bun-webinix';
+```
 
 ## Minimal Example
 
 ```js
-import { Webinix } from "webinix";
+import { Webinix } from '@webinix-dev/bun-webinix';
 
 const myWindow = new Webinix();
 myWindow.show('<html><script src="webinix.js"></script> Hello World! </html>');

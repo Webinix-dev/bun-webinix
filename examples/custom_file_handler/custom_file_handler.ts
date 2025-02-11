@@ -2,10 +2,10 @@
 // bun run custom_file_handler.ts
 
 // To import from local (Debugging and Development)
-import { Webinix } from "../../mod.ts";
+// import { Webinix } from "../../mod.ts";
 
-// To import from online `https://bun.sh` (Production)
-// import { Webinix } from "webinix";
+// To import from NPM (Production)
+import { Webinix } from '@webinix-dev/bun-webinix';
 
 // Return HTTP header + file raw binary content
 const getFile = async (contentType: string, filename: string): Promise<Uint8Array> => {

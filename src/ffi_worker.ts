@@ -1,5 +1,5 @@
 /*
-  Webinix Bun 2.5.0
+  Webinix Bun 2.5.1
   http://webinix.me
   https://github.com/webinix-dev/bun-webinix
   Copyright (c) 2020-2025 Hassan Draga.

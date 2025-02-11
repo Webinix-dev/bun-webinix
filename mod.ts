@@ -16,7 +16,7 @@
  * ## Minimal Example
  *
  * ```ts
- * import { Webinix } from "webinix";
+ * import { Webinix } from '@webinix-dev/bun-webinix';
  *
  * const myWindow = new Webinix();
  * myWindow.show("<html><script src=\"webinix.js\"></script> Hello World! </html>");

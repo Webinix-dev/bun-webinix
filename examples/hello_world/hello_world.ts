@@ -2,10 +2,10 @@
 // bun run hello_world.ts
 
 // To import from local (Debugging and Development)
-import { Webinix } from "../../mod.ts";
+// import { Webinix } from "../../mod.ts";
 
-// To import from online `https://bun.sh` (Production)
-// import { Webinix } from "webinix";
+// To import from NPM (Production)
+import { Webinix } from '@webinix-dev/bun-webinix';
 
 const myHtml = `<!DOCTYPE html>
 <html>
