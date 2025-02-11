@@ -6,7 +6,7 @@
 import { Webinix } from "../../mod.ts";
 
 // To import from online `https://bun.sh` (Production)
-// import { Webinix } from "https://bun.sh/x/webinix@2.5.0/mod.ts";
+// import { Webinix } from "webinix";
 
 async function allEvents(e: Webinix.Event) {
   /*

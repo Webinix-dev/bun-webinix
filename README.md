@@ -42,14 +42,14 @@ is written in Bun using Webinix as the GUI library.
 
 ## Installation
 
-Specific version: `import { Webinix } from "https://bun.sh/x/webinix@2.5.0/mod.ts";`
+Specific version: `import { Webinix } from "webinix";`
 
 Latest version: `import { Webinix } from "https://bun.sh/x/webinix/mod.ts";`
 
 ## Minimal Example
 
 ```js
-import { Webinix } from "https://bun.sh/x/webinix@2.5.0/mod.ts";
+import { Webinix } from "webinix";
 
 const myWindow = new Webinix();
 myWindow.show('<html><script src="webinix.js"></script> Hello World! </html>');
