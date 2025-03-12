@@ -39,12 +39,12 @@ async function getLibName() {
     case "darwin":
       switch (process.arch) {
         case "x64":
-          fileName = "webinix-macos-clang-x64/webinix-2.dylib";
-          localFileName = "./webinix-2.dylib";
+          fileName = "webinix-macos-clang-x64/libwebinix-2.dylib";
+          localFileName = "./libwebinix-2.dylib";
           break;
         case "arm64":
-          fileName = "webinix-macos-clang-arm64/webinix-2.dylib";
-          localFileName = "./webinix-2.dylib";
+          fileName = "webinix-macos-clang-arm64/libwebinix-2.dylib";
+          localFileName = "./libwebinix-2.dylib";
           break;
         default:
           throw new Error(`Unsupported architecture ${process.arch} for macOS`);
@@ -55,12 +55,12 @@ async function getLibName() {
     default:
       switch (process.arch) {
         case "x64":
-          fileName = "webinix-linux-gcc-x64/webinix-2.so";
-          localFileName = "./webinix-2.so";
+          fileName = "webinix-linux-gcc-x64/libwebinix-2.so";
+          localFileName = "./libwebinix-2.so";
           break;
         case "arm64":
-          fileName = "webinix-linux-gcc-arm64/webinix-2.so";
-          localFileName = "./webinix-2.so";
+          fileName = "webinix-linux-gcc-arm64/libwebinix-2.so";
+          localFileName = "./libwebinix-2.so";
           break;
         default:
           throw new Error(`Unsupported architecture ${process.arch} for ${process.platform}`);
