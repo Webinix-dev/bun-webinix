@@ -160,7 +160,7 @@ export async function downloadCoreLibrary() {
   }
 
   // Copy library
-  const libFile = `libwebinix-2.${ext}`;
+  const libFile = process.platform === "win32" ? `webinix-2.${ext}` : `libwebinix-2.${ext}`;
   await createDirectory(outputDir);
   await copyFileOverwrite(joinPath(cacheDir, fileName, libFile), joinPath(outputDir, libFile));
 
