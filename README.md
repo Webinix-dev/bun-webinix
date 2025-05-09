@@ -1,20 +1,8 @@
 <div align="center">
 
-![Logo](https://raw.githubusercontent.com/webinix-dev/webinix-logo/main/webinix_bun.png)
-
 # Bun-Webinix v2.5.1 (Beta)
 
-[last-commit]: https://img.shields.io/github/last-commit/webinix-dev/webinix?style=for-the-badge&logo=github&logoColor=C0CAF5&labelColor=414868
-[release-version]: https://img.shields.io/github/v/tag/webinix-dev/webinix?style=for-the-badge&logo=webtrees&logoColor=C0CAF5&labelColor=414868&color=7664C6
-[license]: https://img.shields.io/github/license/webinix-dev/webinix?style=for-the-badge&logo=opensourcehardware&label=License&logoColor=C0CAF5&labelColor=414868&color=8c73cc
-
-[![][last-commit]](https://github.com/webinix-dev/bun-webinix/pulse)
-[![][release-version]](https://github.com/webinix-dev/bun-webinix/releases/latest)
-[![][license]](https://github.com/webinix-dev/bun-webinix/blob/main/LICENSE)
-
 > Use any web browser or WebView as GUI, with Bun in the backend and modern web technologies in the frontend, all in a lightweight portable library.
-
-![Screenshot](https://raw.githubusercontent.com/webinix-dev/webinix-logo/main/screenshot.png)
 
 </div>
 
