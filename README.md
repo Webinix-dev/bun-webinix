@@ -50,22 +50,6 @@ bun run minimal.ts
 
 [More examples](https://github.com/webinix-dev/bun-webinix/tree/main/examples)
 
-## Documentation
-
-- [Online Documentation](https://webinix.me/docs/2.5/#/) (_Deno section is the same as Bun_)
-
-## CppCon 2019 Presentation
-
-[Borislav Stanimirov](https://ibob.bg/) explained at
-[C++ Conference 2019 (_YouTube_)](https://www.youtube.com/watch?v=bbbcZd4cuxg)
-how beneficial it is to use the web browser as GUI.
-
-<!-- <div align="center">
-  <a href="https://www.youtube.com/watch?v=bbbcZd4cuxg"><img src="https://img.youtube.com/vi/bbbcZd4cuxg/0.jpg" alt="Embrace Modern Technology: Using HTML 5 for GUI in C++ - Borislav Stanimirov - CppCon 2019"></a>
-</div> -->
-
-![ScreenShot](img/cppcon_2019.png)
-
 ## UI & The Web Technologies
 
 Web application UI design is not just about how a product looks but how it
